@@ -437,7 +437,8 @@ namespace yapi
 
 	#else
 
-		namespace {
+		namespace 
+		{
 			#define _(x) __asm __emit (x)
 			__declspec(naked) DWORD64 x64Call(DWORD64 func, int argC, ...)
 			{
@@ -692,7 +693,8 @@ namespace yapi
 		SIZE_T _dwSize;
 	};
 
-	namespace {
+	namespace 
+	{
 
 		std::string makeShellCode(int cnt, bool is64Bit)
 		{
